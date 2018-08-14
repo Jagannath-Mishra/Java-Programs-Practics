@@ -1,6 +1,8 @@
 # How to find duplicate in array and highest value of repatative element. 
 
 ### Example : array = {1,8,4,2,5,6,3,4,5,87,2,1,5,4,6,6,6,4,7,10,8,2,5};
+	      ###### Note: repeatative element: {1=2, 2=3, 3=1, 4=4, 5=4, 6=4, 87=1, 7=1, 8=2, 10=1}
+	      ###### Greatest Among : 4=4, 5=4, 6=4
 #### Output Should Be : 6
 
 ##### Code Here:
