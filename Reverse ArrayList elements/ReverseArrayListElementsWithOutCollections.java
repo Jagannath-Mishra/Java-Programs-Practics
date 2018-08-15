@@ -3,6 +3,8 @@ import java.util.Collections;
 
 public class ReverseArrayListElementsWithOutCollections {
 
+
+	
 	public static void main(String[] args) {
 		
 		  ArrayList<String> arrayList= new ArrayList<>();
@@ -11,7 +13,14 @@ public class ReverseArrayListElementsWithOutCollections {
 		  arrayList.add("Orange");
 		  
 		  System.out.println("Before Reversing elements:"+arrayList);
-		  Collections.reverse(arrayList);
+		  
+		  ArrayList temp = new ArrayList(arrayList);
+		  
+		  arrayList.clear();
+		  
+		  for(int i = temp.size() -1; i >=0 ; i--) {
+			  arrayList.add((String) temp.get(i));
+		  }
 		  
 		  System.out.println("Aftere Reversing elements:"+arrayList);
 				  
