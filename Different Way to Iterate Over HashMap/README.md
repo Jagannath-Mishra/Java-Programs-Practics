@@ -6,6 +6,13 @@ Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
     System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
 }
+
+OR
+
+
+for (Entry entry : treeMap.entrySet()) {
+System.out.println(entry.getKey() + " - " + entry.getValue());
+}
 ```
 
 ## Method #2: Iterating over keys or values using For-Each loop
