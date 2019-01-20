@@ -13,4 +13,33 @@ Recommended: Please solve it on “PRACTICE ” first, before moving on to the s
 Method 1 (Simple)
 Use two loops. In the outer loop, pick elements one by one and in the inner loop calculate the difference of the picked element with every other element in the array and compare the difference with the maximum difference calculated so far. Below is the implementation of the above approach :
 ```
+## PROGRAM
 
+```
+public class ArrayMaxDiff {
+
+	public int maxDifference(int[] arr){
+		int diff = Math.abs(arr[1] - arr[0]);
+		int size = arr.length;
+		for(int i = 0; i < size; i++){
+			for(int j = i+1;  j < size ; j++){
+				//System.out.print(i+"-"+j+"  ");
+				if(arr[j] - arr[i] > diff){
+					diff = arr[j] - arr[i];
+				}
+			}
+			//System.out.println("");
+		}
+		return diff;
+		
+	}
+	
+	public static void main(String[] args) {
+		int[] arr = {111, 1, 10000, 10, 1110} ;
+		ArrayMaxDiff ob =  new ArrayMaxDiff();
+		System.out.println(ob.maxDifference(arr));
+	}
+}
+
+
+```
